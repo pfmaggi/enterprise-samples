@@ -21,16 +21,15 @@ import android.content.Intent
 import android.content.IntentFilter
 import android.content.RestrictionEntry
 import android.content.RestrictionsManager
-import android.os.Build
+import android.os.Build.VERSION.SDK_INT
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.android.managedconfigurations.databinding.FragmentManagedConfigurationsBinding
 import com.example.android.common.logger.Log
-import java.lang.StringBuilder
+import com.example.android.managedconfigurations.databinding.FragmentManagedConfigurationsBinding
 
 /**
  * Pressing the button on this fragment pops up a simple Toast message. The button is enabled or
@@ -64,6 +63,12 @@ class ManagedConfigurationsFragment : Fragment(), View.OnClickListener {
             binding.yourItems.visibility = View.VISIBLE
         } else {
             binding.yourItems.visibility = View.GONE
+        }
+
+        if (requireContext().isRunningOnWorkProfile()) {
+            Toast.makeText(requireContext(), "The application is Managed", Toast.LENGTH_LONG).show()
+        } else {
+            Toast.makeText(requireContext(), "The application is NOT Managed", Toast.LENGTH_LONG).show()
         }
     }
 
@@ -250,6 +255,6 @@ class ManagedConfigurationsFragment : Fragment(), View.OnClickListener {
         private const val KEY_ITEMS = "items"
         private const val KEY_ITEM_KEY = "key"
         private const val KEY_ITEM_VALUE = "value"
-        private val BUNDLE_SUPPORTED = Build.VERSION.SDK_INT >= 23
+        private val BUNDLE_SUPPORTED = SDK_INT >= 23
     }
 }

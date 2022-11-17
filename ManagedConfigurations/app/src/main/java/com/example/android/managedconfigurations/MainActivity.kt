@@ -19,12 +19,12 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ViewAnimator
-import com.example.android.managedconfigurations.databinding.ActivityMainBinding
 import com.example.android.common.activities.SampleActivityBase
 import com.example.android.common.logger.Log
 import com.example.android.common.logger.LogFragment
 import com.example.android.common.logger.LogWrapper
 import com.example.android.common.logger.MessageOnlyLogFilter
+import com.example.android.managedconfigurations.databinding.ActivityMainBinding
 
 /**
  * A simple launcher activity containing a summary sample description, sample log and a custom
