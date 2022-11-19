@@ -1,5 +1,5 @@
 > **Note**  
-> This is not an official Google sample
+> This is not an official Google sample!
 >
 > The Google's sample this is based on has been deprecated and
 > removed because Android Enterprise is no longer accepting new
