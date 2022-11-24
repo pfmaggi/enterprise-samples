@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright 2022 The Android Open Source Project
+  ~
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~      https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">NFCWriter</string>
+    <string name="da_package_name_sample">com.afwsamples.testdpc</string>
+    <string name="da_package_name">Package Name:</string>
+    <string name="read_nfc_tag">Read NFC TAG</string>
+    <string name="write_nfc_tag">Write NFC TAG</string>
+    <string name="help_guide">Here will be the content of the NFC TAG</string>
+    <string name="da_download_location_sample">URL for the device admin app</string>
+    <string name="da_download_location">Download Location</string>
+    <string name="no_nfc_tag">No NFC TAG detected</string>
+    <string name="write_success">NFC TAG Written successfully</string>
+    <string name="write_error">Error writing NFC TAG</string>
+</resources>
