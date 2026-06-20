@@ -47,21 +47,20 @@
         <View
               android:layout_width="match_parent"
               android:layout_height="1dp"
-              android:background="@android:color/darker_gray" />
+              android:background="?attr/colorOutlineVariant" />
 
-        <fragment
+        <androidx.fragment.app.FragmentContainerView
               android:name="com.example.android.common.logger.LogFragment"
               android:id="@+id/log_fragment"
               android:layout_width="match_parent"
-              android:layout_height="0px"
-              android:layout_weight="1" />
+              android:layout_height="0px" />
 
     </LinearLayout>
 
     <View
           android:layout_width="1dp"
           android:layout_height="match_parent"
-          android:background="@android:color/darker_gray" />
+          android:background="?attr/colorOutlineVariant" />
 
     <FrameLayout
           android:id="@+id/sample_content_fragment"
